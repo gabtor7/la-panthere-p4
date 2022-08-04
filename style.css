@@ -362,6 +362,19 @@ a:hover {
     z-index: 2;
 }
 
+.motto {
+    font-size: 24px;
+}
+
+.citation p {
+    font-size: 20px;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: bold;
+}
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -677,17 +690,12 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
-}
-
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
 }
 
 .cta-hero {
