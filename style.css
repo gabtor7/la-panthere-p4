@@ -572,6 +572,14 @@ a[data-lightbox]:hover img {
     animation-fill-mode: none;
 }
 
+.img-responsive {
+    width: 400px;
+}
+
+.pf-section {
+    margin-bottom: 20px;
+}
+
 #lightbox-modal {
     display: flex;
     align-items: center;
