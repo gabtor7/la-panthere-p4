@@ -14,7 +14,6 @@ button {
 }
 
 a:hover {
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -563,7 +562,7 @@ a[data-lightbox] {
     text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before, a[data-lightbox]:focus {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
@@ -740,20 +739,25 @@ p {
     font-weight: 700;
 }
 
-.keywords {
+div.keywords {
     color: #fff;
+    margin-top: 18px;
+}
+
+.social-icons {
+    margin: 82px auto;
 }
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 a.social span {
     color: #fff!important;
 }
 
-a.social span:hover {
+a.social span:hover, a.social span:focus {
     color: #ccc!important;
 }
 
@@ -806,7 +810,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.9);
+    background-color: rgba(64, 64, 64, 0.75);
     padding: 40px 40px 40px 40px;
 }
 
@@ -836,7 +840,7 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
@@ -845,7 +849,7 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.ltc-white:hover {
+.ltc-white:hover, .ltc-white:focus {
     color: #cccccc!important;
 }
 
@@ -860,10 +864,6 @@ h4 {
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
-}
-
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
@@ -1092,4 +1092,8 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.nav-elements a:hover, .nav-elements a:focus {
+    text-decoration: underline;
 }
