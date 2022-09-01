@@ -262,7 +262,7 @@ ul li a{
 }
 
 .l-bloc .navbar-toggle .icon-bar {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, .9);
 }
 
 .d-bloc .panel .btn-wire,
@@ -347,6 +347,7 @@ ul li a{
 }
 
 .navbar-toggle {
+
     margin: 10px 10px 0 0;
     border: 0px;
 }
@@ -435,7 +436,7 @@ nav .caret {
     margin: 0 5px;
 }
 
-.dropdown-menu .dropdown-menu {
+.dropdown-menu {
     top: -8px;
     left: 100%;
 }
@@ -562,7 +563,11 @@ a[data-lightbox] {
     text-align: center;
 }
 
-a[data-lightbox]:hover::before, a[data-lightbox]:focus {
+a[data-lightbox]:focus {
+    border: solid 2px #00F;
+}
+
+a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
@@ -596,9 +601,12 @@ a[data-lightbox]:hover img {
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
+a[data-lightbox]:focus{
+    border: solid 2px #00F;
+}
 
 .img-responsive {
-    width: 400px;
+    margin: auto;
 }
 
 .pf-section {
@@ -651,6 +659,13 @@ a[data-lightbox]:hover img {
     opacity: 1.0;
     color: #FFF;
 }
+
+.close-lightbox:focus,
+.next-lightbox:focus,
+.prev-lightbox:focus {
+    border: solid 1px #00F;
+}
+
 
 .next-lightbox,
 .prev-lightbox {
@@ -757,8 +772,12 @@ a.social span {
     color: #fff!important;
 }
 
-a.social span:hover, a.social span:focus {
+a.social span:hover {
     color: #ccc!important;
+}
+
+a.social:focus span {
+    border: solid 1px #fff;
 }
 
 h2 {
@@ -840,16 +859,20 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
+.btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
+}
+
+.btn-atomic-tangerine:focus, .ltc-white:focus {
+    border: solid 1px #fff;
 }
 
 .ltc-white {
     color: #FFFFFF!important;
 }
 
-.ltc-white:hover, .ltc-white:focus {
+.ltc-white:hover {
     color: #cccccc!important;
 }
 
@@ -942,7 +965,12 @@ h4 {
     }
 }
 
+.navOn{
+    float: right;
+}
+
 @media (max-width: 767px) {
+
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1023,7 +1051,7 @@ h4 {
         width: 100%;
     }
     .nav-invert .navbar-toggle {
-        float: left;
+        float: right;
         margin-left: 10px;
     }
     .bloc {
