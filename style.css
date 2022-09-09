@@ -100,6 +100,10 @@ ul li a{
     right: 0;
 }*/
 
+.dropdown-item:hover, .dropdown-item.focus {
+    text-decoration: underline;
+}
+
 .texture-paper p {
     color: #fff!important;
 }
